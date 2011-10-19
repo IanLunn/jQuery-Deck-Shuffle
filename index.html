@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Deck Shuffle Demo</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="../../demo-assets/demo-style.css" rel="stylesheet" type="text/css" /> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="scripts/jquery.hoverIntent.minified.js"></script>
+<script src="scripts/jquery.deck-shuffle.1.0.js"></script>
+<script type="text/javascript" src="../../demo-assets/hire-ian.js"></script> 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-11991680-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+</head>
+
+<body>
+
+<!--code for the demo overlay and details, not needed for the demo to work-->
+    <div id="demo-details" class="bottom">
+        <div id="demo-links" class="float-left">
+        	<ul>
+            	<li><a href="http://www.ianlunn.co.uk/demos/jquery-deck-shuffle/jquery-deck-shuffle.zip" title="jQuery Deck Shuffle">jQuery Deck Shuffle</a></li>
+                <li><a href="http://www.ianlunn.co.uk/blog/code-tutorials/jquery-deck-shuffle/" title="jQuery Deck Shuffle">Tutorial</a></li>
+            </ul>
+        </div>  
+        <ul id="share">
+            <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="IanLunn">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li> 
+            <li class="facebook"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ianlunn.co.uk%2Fdemos%2Fjquery-deck-shuffle%2F&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+            <li><a id="hire" href="http://www.ianlunn.co.uk/" title="Hire Ian Lunn Design"><img src="../../demo-assets/hire-ian.png" alt="Hire Ian Lunn Design"></a></li>
+        </ul>
+    </div>
+<!--//code for the demo overlay and details, not needed for the demo to work-->
+
+    
+    <p class="medium">
+        Hover over a background layer in the deck to bring it to the top. The demo uses the <a href="http://cherne.net/brian/resources/jquery.hoverIntent.html" title="jQuery HoverIntent Plugin">jQuery HoverIntent Plugin</a> to make sure each layer only moves when the user stops the cursor on top of it.</p> 
+    
+
+	<div id="container">
+        <div id="one" class="top">
+            <h2>Product 1</h2>
+            <p>Aliquam ac turpis arcu, vel sollicitudin felis. Sed velit mauris, mattis ac hendrerit dictum, fringilla id nisl. Etiam convallis bibendum dolor nec hendrerit. Morbi nulla felis, pretium ut blandit vel, rhoncus a diam. Morbi nulla felis, pretium ut blandit vel, rhoncus a diam.</p>
+            <ul>
+            	<li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <a href="#" title=""><img class="order" src="images/bt-order.png" alt="Order" /></a>
+        </div>
+        <div id="two" class="middle">
+            <h2>Product 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus nisl eget nulla fermentum consectetur. Mauris lacinia sollicitudin dolor, eget rhoncus nibh sollicitudin vitae. Mauris pharetra, purus vitae euismod varius, mauris justo laoreet mi, et pulvinar magna mi.</p>
+            <ul>
+            	<li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <a href="#" title=""><img class="order" src="images/bt-order.png" alt="Order" /></a>
+        </div>
+        <div id="three" class="bottom">
+            <h2>Product 3</h2>
+            <p>Rhoncus pellentesque tellus. In tempor arcu nec nisi scelerisque at tristique erat varius. Cras non urna at nisl aliquam dictum. Donec lacus sem, aliquet eu rutrum sed, suscipit at tellus. Sed vitae venenatis lectus. Pellentesque faucibus sagittis felis, id vestibulum ligula.</p>
+            <ul>
+            	<li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <a href="#" title=""><img class="order" src="images/bt-order.png" alt="Order" /></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/*
+Demo: jQuery Deck Shuffle
+Author: Ian Lunn
+Author URL: http://www.ianlunn.co.uk/
+Demo URL: http://www.ianlunn.co.uk/demos/jquery-deck-shuffle/
+Tutorial URL: http://www.ianlunn.co.uk/blog/code-tutorials/jquery-deck-shuffle/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer and be so kind, place a link on your website to http://www.ianlunn.co.uk/.
+
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#container{
+	position: relative;	
+	margin: 0 auto;
+	width: 400px;
+}
+
+img{
+	border: 0;	
+}
+
+ul{
+	list-style: disc;
+	padding: 0 0 0 10%;	
+}
+
+p, ul, h2{
+	margin: 0 0 5% 0;	
+}
+
+.order{
+	width: 100%;
+	margin: 0 auto;	
+}
+
+h2{
+	border-bottom: solid #ccc 2px;	
+	font-size: 100%;
+	font-weight: bold;
+	padding: 0 0 2% 0;
+}
+
+#one, #two, #three{
+	background: url(../images/bg-card.png) repeat;
+	border: solid 2px #CCC;
+	border-radius: 5%;
+	font-size: 100%;
+	padding: 3%;
+	position: absolute;
+}
+
+#one{
+	height: 360px;
+	width: 280px;
+	z-index: 3;	
+}
+
+#two{
+	height: 288px;
+	left: 100px;
+	top: 52px;
+	width: 224px;
+	z-index: 2;	
+}
+
+#three{
+	height: 216px;
+	left: 185px;
+	top: 95px;
+	width: 168px;
+	z-index: 1;	
+}
+
+#two p, #two ul, #two h2{
+	font-size: 80%;	
+}
+
+#three p, #three ul, #three h2{
+	font-size: 60%;	
+}
